@@ -19,9 +19,12 @@
 	</script>
 
 	<section class="strips">
-		<div></div>
 
-		<article class="strips__strip">
+		<div id="firstDiv"></div>
+
+		
+
+		<article class="strips__strip" id="leftStrip">
 			<div class="strip__content">
 				<h1 class="strip__title" data-name="Lorem">About Me</h1>
 				<div class="strip__inner-text">
@@ -30,7 +33,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="strips__strip">
+		<article class="strips__strip" id="midStrip">
 			<div class="strip__content">
 				<h1 class="strip__title" data-name="Ipsum">Projects</h1>
 				<div class="strip__inner-text">
@@ -41,7 +44,7 @@
 				</div>
 			</div>
 		</article>
-		<article class="strips__strip">
+		<article class="strips__strip" id="rightStrip">
 			<div class="strip__content">
 				<h1 class="strip__title" data-name="Dolor">Resume</h1>
 				<div class="strip__inner-text">
@@ -50,13 +53,22 @@
 				</div>
 			</div>
 		</article>
-		<div></div>
+		<div id="lastDiv"></div>
+
 		<i class="fa fa-close strip__close"></i>
 
 	</section>
 	
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/index.js"></script>
+
+			<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			
+		}
+			
+		</script>
+
 
 </body>
 </html>
