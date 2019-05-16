@@ -6,6 +6,13 @@ var Expand = (function() {
   
   var expanded  = false;
 
+    var mobile = false;
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        mobile = true;
+        alert("mobile not supported yet");
+    }
+
   var open = function() {
       
     var tile = $(this).parent();
