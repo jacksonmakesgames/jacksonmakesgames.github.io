@@ -77,7 +77,7 @@
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1000px) {
   .strips__strip {
     min-height: 20vh;
   }
@@ -166,7 +166,7 @@
   z-index: 3;
   cursor: default;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1000px) {
   .strips__strip--expanded {
     min-height: 100vh;
   }
@@ -181,8 +181,10 @@
 }
 .strips__strip--expanded .strip__inner-text {
   opacity: 1;
+  z-index: 5;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+
 }
 
 .strip__title {
@@ -195,7 +197,7 @@
   color: white;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1000px) {
   .strip__title {
     font-size: 28px;
   }
@@ -345,6 +347,11 @@ p {
 .resume_box{
 	height:90vh;
 	width:80vw;
-	
+	color: #FFFFFF;
+	background: #000000;
 	overflow:auto;
+}
+
+.back{
+	z-index: -1;
 }
